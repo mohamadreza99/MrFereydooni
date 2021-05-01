@@ -10,6 +10,12 @@ jobs:
       # See action.yml for all options
       - uses: lowlighter/metrics@latest
         with:
+          plugin_habits: yes
+          plugin_habits_from: 200       # Use 200 events to compute habits
+          plugin_habits_days: 600        # Keep only events from last 14 days
+          plugin_habits_facts: yes      # Display facts section
+          plugin_habits_charts: no     # Display charts section
+          config_timezone: Asia/Tehran # Set timezone
           # Your GitHub token
           token: ${{ secrets.METRICS }}
           # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
