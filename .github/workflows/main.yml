@@ -23,3 +23,5 @@ jobs:
 #           plugin_gists: yes
           plugin_languages: yes
 #           plugin_isocalendar: yes
+
+# https://metrics.lecoq.io/
